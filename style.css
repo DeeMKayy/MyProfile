@@ -5,9 +5,10 @@ body {
     background-size: cover;
     background-position: center;
     color: #e6d7ae;
+    overflow-x: hidden;    
 }
 
-img {
+#logo {
     position: absolute;
     background-color: #121113;
     top: 10%;
@@ -17,9 +18,10 @@ img {
     height: 60%;
     border-radius: 50%;
     box-shadow: 0 0 50px #e6d7ae;
+    transition: top 0.1s ease; 
 }
 
-img:hover {
+#logo:hover {
     box-shadow: 0 0 70px #e6d7ae;
 
 }
@@ -27,89 +29,21 @@ img:hover {
 #name {
     position: absolute;
     top: 5%;
-    left: 15%;
+    left: 22%;
     padding: 2%;
     padding-top: 0;
     padding-bottom: 0;
     font-size: xx-large;
-    border-radius: 2%;
-    backdrop-filter: blur (10px) brightness(0.5);
-}
-
-#about {
-    position: absolute;
-    border-radius: 5px;
-    left: 7.5%;
-    right: 40%;
-    top: 40%;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-size: x-large;
-    backdrop-filter: blur (10px) brightness(0.5);
-    background-color: rgba(240, 248, 255, 0.164);
 }
 
 #name h1 {
     font-weight: bolder;
 }
 
-#name h2 {
-    position: relative;
-    left: 20%;
-    font-style: italic;
-
-}
-#skills {
-    display: none;
-
-    position: absolute;
-    left: 5%;
-    right: 50%;
-    top: 40%;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-size: x-large;
-    backdrop-filter: blur (10px) brightness(0.5);
-    background-color: rgba(240, 248, 255, 0.281);
-}
-
-#skillContent {
-    display: none;
-
-    position: absolute;
-    left: 2.5%;
-    right: 50%;
-    top: 45%;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-size: x-large;
-    backdrop-filter: blur (10px) brightness(0.5);
-    background-color: rgba(240, 248, 255, 0.281);
-}
-
-#projects {
-    display: none;
-    position: absolute;
-}
-
-#projectContent {
-    display: none;
-
-}
-
-#links {
-    display: none;
-
-}
-
-#linkContent{
-    display: none;
-
-}
-
 #btnContainer {
     position: fixed;
-    bottom: 10%;
+    bottom: 5%;
+    padding: 10px; 
     left: 30%;
     right: 30%;
     animation: fade-in-bottom 1.5s ease-in;
@@ -167,6 +101,20 @@ footer {
 
 .head {
     animation: fade-in 2s ease-in-out;
+    position: absolute;
+    top: 14%;
+    left: 24%;
+    font-style: italic;
+    padding: 2%;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: x-large;
+    text-align: center;
+    display: none;
+}
+
+.head.active {
+    display: block;
 }
 
 @keyframes fade-in {
@@ -175,7 +123,22 @@ footer {
 }
 
 .content {
+    display: none;
     animation: fade-in-left 1.5s ease-in-out;
+    position: absolute;
+    border-radius: 5px;
+    left: 7.5%;
+    right: 40%;
+    top: 27%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: x-large;
+    backdrop-filter: blur (10px) brightness(0.5);
+    background-color: rgba(240, 248, 255, 0.164);
+}
+
+.content.active {
+    display: block;
 }
 
 @keyframes fade-in-left {
@@ -187,4 +150,55 @@ footer {
         opacity: 1; 
         transform: translateX(0);
     }
+}
+
+.project img {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project p{
+    flex: 1;
+    margin: 0;
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+}
+
+a {
+    text-decoration: none;
+}
+
+a h3{
+    color: #121113;
+    text-shadow: 1px 1px 5px #e6d7ae;
+    transition: transform 0.3s;
+}
+
+a:hover h3 {
+    transform: scale(1.1);
+    color: #e6d7ae;
+    text-shadow: 2px 2px 10px #121113;
+}
+
+#skillContent h3 {
+    color: #121113;
+    text-shadow: 1px 1px 5px #e6d7ae;
+    transition: transform 0.3s;
+}
+
+#skillContent h3:hover {
+    transform: scale(1.1);
+    color: #e6d7ae;
+    text-shadow: 2px 2px 10px #121113;
+}
+
+#linkContent img {
+    width: 100px;
+    height: auto;
+    margin-right: 100px;
 }
