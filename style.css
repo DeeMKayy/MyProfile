@@ -12,12 +12,10 @@ body {
     background-color: #121113;
     border-radius: 50%;
     box-shadow: 0 0 50px #e6d7ae;
-    transition: top 0.1s ease; 
 }
 
 #logo:hover {
     box-shadow: 0 0 70px #e6d7ae;
-
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -45,6 +43,7 @@ body {
         transform: translateX(-50%);
         width: 30%;
         height: 60%;
+        transition: top 0.1s ease; 
     }
 
     .content {
