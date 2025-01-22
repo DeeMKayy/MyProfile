@@ -41,10 +41,10 @@ body {
 
     .head {
         top: 22%;
-        left: 22.5%;
+        left: 25%;
     }
     .buttons {
-        gap: 10px;
+        gap: 5px;
     }
     button {
         padding: 20px 15px;   
