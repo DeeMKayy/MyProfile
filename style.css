@@ -17,6 +17,12 @@ body {
     box-shadow: 0 0 70px #e6d7ae;
 }
 
+@media (min-width: 320px) and (max-width:425px) {
+    .head {
+        top: 22%;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
     #logo {
         position: relative;
