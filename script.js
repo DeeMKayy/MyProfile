@@ -46,15 +46,17 @@ linksBtn.addEventListener('click', () => {
     linksHeader.classList.add('active');
 });
 
-// Optionally, show the "About" section by default on page load
 aboutSection.classList.add('active');
  aboutHeader.classList.add('active');
 
-// script.js
 window.addEventListener('scroll', function() {
     const logo = document.getElementById('logo');
     const scrollPosition = window.scrollY; // Get the current vertical scroll position
 
-    // Set the top position of the image based on scroll
-    logo.style.top = (300 + scrollPosition) + 'px';
+    if (window.innerWidth <= 979) {
+        logo.style.top = (300 + scrollPosition) + 'px';
+    } else {
+        logo.style.top = (100 + scrollPosition) + 'px';
+    }
+
 });
