@@ -52,7 +52,7 @@ body {
 }
 
 #name {
-    position: fixed;
+    position: absolute;
     top: 5%;
     left: 22%;
     padding: 2%;
