@@ -32,6 +32,10 @@ body {
         transform: translateX(-50%);
     }
 
+    .content {
+        left: 15%;
+        right: 15%;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 2560px){
