@@ -19,9 +19,9 @@ body {
 
 @media (min-width: 320px) and (max-width: 768px) {
     #logo {
-        position: fixed;
+        position: relative;
         width: 50%;
-        top: 35%;
+        top: 40%;
         left: 50%;
         padding-left: 20px;
         padding-right: 20px;
