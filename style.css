@@ -33,7 +33,7 @@ body {
     }
 
     .content {
-        transform: translateX(-50%);
+        transform: translateX(50%);
     }
 }
 
