@@ -53,11 +53,14 @@ body {
         left: 7.5%;
         right: 40%;
     }
+
+    #name {
+        top: 5%;
+    }
 }
 
 #name {
     position: absolute;
-    top: 5%;
     left: 22%;
     padding: 2%;
     padding-top: 0;
