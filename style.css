@@ -43,6 +43,9 @@ body {
         top: 22%;
         left: 7%;
     }
+    button {
+        padding: 20px 15px;    
+    }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -71,6 +74,10 @@ body {
     .head {
         top: 8%;
         left: 24%;
+    }
+    
+    button {
+        padding: 20px 15px;    
     }
 }
 
@@ -101,6 +108,10 @@ body {
         top: 14%;
         left: 24%;
 
+    }
+
+    button {
+        padding: 40px 30px;    
     }
 }
 
@@ -149,7 +160,6 @@ button {
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    padding: 40px 30px;    
     box-shadow: 0 0 20px #121113;
 }
 
