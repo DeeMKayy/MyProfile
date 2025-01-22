@@ -33,6 +33,8 @@ body {
     }
 
     .content {
+        right: 0;
+
         transform: translateX(0);
     }
 }
