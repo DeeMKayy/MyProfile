@@ -79,5 +79,5 @@ window.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY; // Get the current vertical scroll position
 
     // Set the top position of the image based on scroll
-    logo.style.top = (100 + scrollPosition) + 'px';
+    logo.style.top = (150 + scrollPosition) + 'px';
 });
