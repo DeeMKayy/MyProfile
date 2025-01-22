@@ -34,7 +34,11 @@ body {
     }
 
     #name {
-        top: 2.5%;
+        top: 1%;
+    }
+
+    .head {
+        top: 10%;
     }
 }
 
@@ -56,6 +60,10 @@ body {
 
     #name {
         top: 5%;
+    }
+
+    .head {
+        top: 14%;
     }
 }
 
@@ -128,7 +136,6 @@ footer {
 .head {
     animation: fade-in 2s ease-in-out;
     position: absolute;
-    top: 14%;
     left: 24%;
     font-style: italic;
     padding: 2%;
