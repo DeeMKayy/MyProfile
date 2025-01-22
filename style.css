@@ -34,12 +34,11 @@ body {
 
     .content {
         left: 50%;
-        transform: translateX(-50%);
 
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px){
+@media (min-width: 1024px) and (max-width: 2560px){
     #logo {
         top: 10%;
         right: -10%;
@@ -50,6 +49,7 @@ body {
 
     .content {
         left: 7.5%;
+        right: 40%;
     }
 }
 
@@ -154,7 +154,6 @@ footer {
     animation: fade-in-left 1.5s ease-in-out;
     position: absolute;
     border-radius: 5px;
-    right: 40%;
     top: 27%;
     padding-left: 2%;
     padding-right: 2%;
