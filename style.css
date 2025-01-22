@@ -43,10 +43,17 @@ body {
         top: 22%;
         left: 7%;
     }
+    .buttons {
+        gap: 10px;
+    }
     button {
         padding: 20px 15px;   
         font-size: medium;
  
+    }
+    #btnContainer {
+        left: 0%;
+        right: 0%;
     }
 }
 
@@ -79,12 +86,17 @@ body {
     }
     
     .buttons {
-        gap: 30px;
-       
+        gap: 20px;
     }
+
     button {
         padding: 20px 15px; 
         font-size: medium;
+    }
+
+    #btnContainer {
+        left: 20%;
+        right: 20%;
     }
 }
 
@@ -122,6 +134,11 @@ body {
         font-size: large;
   
     }
+
+    #btnContainer {
+        left: 30%;
+        right: 30%;
+    }
 }
 
 #name {
@@ -141,8 +158,6 @@ body {
     position: fixed;
     bottom: 5%;
     padding: 10px; 
-    left: 30%;
-    right: 30%;
     animation: fade-in-bottom 1.5s ease-in;
 }
 
