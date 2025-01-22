@@ -29,6 +29,7 @@ body {
     }
 
     .content {
+        top: 35%;
         left: 15%;
         right: 15%;
     }
@@ -38,7 +39,7 @@ body {
     }
 
     .head {
-        top: 20%;
+        top: 22%;
     }
 }
 
@@ -54,6 +55,7 @@ body {
     }
 
     .content {
+        top: 27%;
         left: 7.5%;
         right: 40%;
     }
@@ -160,7 +162,6 @@ footer {
     animation: fade-in-left 1.5s ease-in-out;
     position: absolute;
     border-radius: 5px;
-    top: 27%;
     padding-left: 2%;
     padding-right: 2%;
     font-size: x-large;
