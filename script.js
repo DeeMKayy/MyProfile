@@ -13,29 +13,6 @@ const aboutHeader = document.getElementById('description');
 const projectHeader = document.getElementById('projects');
 const linksHeader = document.getElementById('links');
 
-const logo = document.getElementById('logo');
-const breakpoint = 979; 
-let lastScrollTop = 0;
-
-function handleScroll() {
-  const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  if (window.innerWidth <= breakpoint) {
-    if (scrollTop > 0) {
-      logo.classList.add('hidden'); 
-    } else {
-      logo.classList.remove('hidden'); 
-    }
-  } else {
-    logo.classList.remove('hidden'); 
-  }
-
-  lastScrollTop = scrollTop;
-}
-
-window.addEventListener('scroll', handleScroll);
-window.addEventListener('resize', handleScroll);
-
-handleScroll();
 function hideAllSections() {
     document.querySelectorAll('.content').forEach((section) => {
         section.classList.remove('active');
@@ -79,5 +56,5 @@ window.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY; // Get the current vertical scroll position
 
     // Set the top position of the image based on scroll
-    logo.style.top = (150 + scrollPosition) + 'px';
+    logo.style.top = (300 + scrollPosition) + 'px';
 });
