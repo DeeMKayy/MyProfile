@@ -60,12 +60,12 @@ carouselBtn.addEventListener('click', () => {
 });
 window.addEventListener('scroll', function() {
     const logo = document.getElementById('logo');
-    const scrollPosition = window.scrollY; // Get the current vertical scroll position
+    const scrollPosition = window.scrollY;
 
-    if (window.innerWidth <= 979) {
-        logo.style.top = (300 + scrollPosition) + 'px';
+    if (window.innerWidth <= 1440) {
+        logo.style.top = (scrollPosition) + 'px';
     } else {
-        logo.style.top = (100 + scrollPosition) + 'px';
+        logo.style.top = (scrollPosition) + 'px';
     }
 
 });
