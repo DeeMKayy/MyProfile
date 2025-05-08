@@ -121,6 +121,7 @@ main {
     justify-content: center;
     padding: 30px 100px;
     gap: 80px;
+    flex-direction: row-reverse;
 }
 
 /* 
