@@ -108,6 +108,10 @@ nav .menu-dropdown {
     display: none;
 }
 
+nav .list-item {
+    display: none;
+}
+
 nav ul {
     display: flex;
     gap: 30px;
